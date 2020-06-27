@@ -39,15 +39,12 @@
                                     <action selector="userScissors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C42-7g-Ip2"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="human01" translatesAutoresizingMaskIntoConstraints="NO" id="Asb-6T-dQF">
-                                <rect key="frame" x="126" y="64" width="288" height="296"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jnz-WF-OY6">
+                                <rect key="frame" x="20" y="64" width="374" height="340"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="296" id="VlI-A4-6MI"/>
-                                    <constraint firstAttribute="width" constant="288" id="jtS-4g-UTt"/>
+                                    <constraint firstAttribute="width" constant="374" id="YrU-Sl-gUE"/>
+                                    <constraint firstAttribute="height" constant="340" id="mDU-YZ-mvD"/>
                                 </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jnz-WF-OY6">
-                                <rect key="frame" x="20" y="64" width="173" height="163"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTX-fj-7lb">
                                 <rect key="frame" x="286" y="613" width="108" height="132"/>
@@ -61,17 +58,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="x6K-Eb-k7z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="624-Uj-wIf"/>
-                            <constraint firstItem="Asb-6T-dQF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="BIp-Hd-1h7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1eM-sY-HZj" secondAttribute="bottom" constant="116" id="J2B-Ks-ALh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jnz-WF-OY6" secondAttribute="trailing" constant="262" id="Use-7Y-S2N"/>
-                            <constraint firstItem="Asb-6T-dQF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="VBI-SK-iY4"/>
+                            <constraint firstItem="jnz-WF-OY6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="XaF-oa-oX5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZeZ-xp-yDV" secondAttribute="bottom" constant="116" id="dfn-8T-R9q"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CTX-fj-7lb" secondAttribute="trailing" constant="20" id="fii-Cm-TBi"/>
                             <constraint firstItem="ZeZ-xp-yDV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h2S-3J-460"/>
-                            <constraint firstItem="x6K-Eb-k7z" firstAttribute="top" secondItem="jnz-WF-OY6" secondAttribute="bottom" constant="234" id="hHw-xa-yJJ"/>
                             <constraint firstItem="x6K-Eb-k7z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kwp-yA-otO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jnz-WF-OY6" secondAttribute="trailing" constant="20" id="lqV-2V-JbV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CTX-fj-7lb" secondAttribute="bottom" constant="117" id="tp0-uD-iJ1"/>
-                            <constraint firstItem="Asb-6T-dQF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="v81-qM-CaW"/>
+                            <constraint firstItem="jnz-WF-OY6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yCN-La-zQ5"/>
                             <constraint firstItem="1eM-sY-HZj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yZh-kH-6Hn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -86,7 +81,4 @@
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="human01" width="960" height="960"/>
-    </resources>
 </document>
