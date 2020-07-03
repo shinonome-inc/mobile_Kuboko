@@ -7,22 +7,25 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var judgeMsg: UILabel!
     @IBOutlet weak var cpHandImage: UIImageView!
+    @IBOutlet weak var userRockImg: UIButton!
+    @IBOutlet weak var userScissorsImg: UIButton!
+    @IBOutlet weak var userPaperImg: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
         //set images animation when starting
         let image01 = UIImage(named: "rock")!
         let image02 = UIImage(named: "scissors")!
         let image03 = UIImage(named: "paper")!
-        let handImageArray : Array<UIImage> = [image01, image02, image03]
+        let handImageArray = [image01, image02, image03]
         cpHandImage.animationImages = handImageArray
         cpHandImage.animationDuration = 0.2
         cpHandImage.startAnimating()
@@ -42,12 +45,12 @@ class ViewController: UIViewController {
     
     
     //Janken Hand
-    enum Hand : Int {
+    enum Hand: Int {
         case rock       //0(Default Value)
         case scissors   //1
         case paper      //2
         
-        var handString : String! {
+        var handString: String! {
             switch self {
             case .rock:
                 return "rock"
@@ -58,14 +61,15 @@ class ViewController: UIViewController {
             }
         }
     }
+    
 
     //Janken Result
-    enum Result : Int {
+    enum Result: Int {
         case draw       //0(Default Value)
         case lose       //1
         case win        //2
         
-        var toString : String! {
+        var toString: String! {
             switch self {
             case .draw:
                 return "draw"
@@ -76,6 +80,8 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    
 
     //Janken Method
     func janken(you: Hand) {
@@ -85,14 +91,24 @@ class ViewController: UIViewController {
         guard let result = Result(rawValue: (you.rawValue - cp.rawValue + 3) % 3) else {   //judge    0:draw 1:loss 2:win
             fatalError("ERROR RESULT TYPE")
         }
-        print("you: \(you).  cp: \(cp).  you \(result)")
+        print("you: \(you).  cp: \(cp).  you: \(result)")
         
-        let image = UIImage(named: cp.handString)   // set image of cp hand
-        cpHandImage.image = image
-        
+        cpHandImage.image = UIImage(named: cp.handString)   // set image of cp hand
         judgeMsg.text = "you " + result.toString    //set result message
+        
         cpHandImage.stopAnimating()
-        Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(ViewController.viewDidLoad),userInfo: nil,repeats: false)
+        
+        userRockImg.isEnabled = false
+        userScissorsImg.isEnabled = false
+        userPaperImg.isEnabled = false
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.cpHandImage.startAnimating()
+            self.judgeMsg.text = "JANKEN..."
+            self.userRockImg.isEnabled = true
+            self.userScissorsImg.isEnabled = true
+            self.userPaperImg.isEnabled = true
+        }
     }
     
 }
