@@ -20,3 +20,4 @@ profile
 
 #CocoaPod
 Pods/*
+.Podfile.lock
