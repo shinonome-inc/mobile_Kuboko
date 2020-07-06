@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		372B80B824B2F0AA00754CCB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37FEA85324B2CDDE009A95AE /* Alamofire.framework */; };
+		372B80B924B2F0AA00754CCB /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37FEA85324B2CDDE009A95AE /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		372B80BA24B2F0AA00754CCB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37FEA85424B2CDDE009A95AE /* SwiftyJSON.framework */; };
+		372B80BB24B2F0AA00754CCB /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37FEA85424B2CDDE009A95AE /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3792583524B2C373006AD3C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3792583424B2C373006AD3C9 /* AppDelegate.swift */; };
 		3792583724B2C373006AD3C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3792583624B2C373006AD3C9 /* SceneDelegate.swift */; };
 		3792583924B2C373006AD3C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3792583824B2C373006AD3C9 /* ViewController.swift */; };
@@ -16,10 +20,6 @@
 		3792584424B2C374006AD3C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3792584224B2C374006AD3C9 /* LaunchScreen.storyboard */; };
 		3792584F24B2C374006AD3C9 /* QiitaAPIApp04Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3792584E24B2C374006AD3C9 /* QiitaAPIApp04Tests.swift */; };
 		3792585A24B2C374006AD3C9 /* QiitaAPIApp04UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3792585924B2C374006AD3C9 /* QiitaAPIApp04UITests.swift */; };
-		37FEA85524B2CDDE009A95AE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37FEA85324B2CDDE009A95AE /* Alamofire.framework */; };
-		37FEA85624B2CDDE009A95AE /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37FEA85324B2CDDE009A95AE /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		37FEA85724B2CDDE009A95AE /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37FEA85424B2CDDE009A95AE /* SwiftyJSON.framework */; };
-		37FEA85824B2CDDE009A95AE /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37FEA85424B2CDDE009A95AE /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,14 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		37FEA85924B2CDDE009A95AE /* Embed Frameworks */ = {
+		372B80BC24B2F0AA00754CCB /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				37FEA85824B2CDDE009A95AE /* SwiftyJSON.framework in Embed Frameworks */,
-				37FEA85624B2CDDE009A95AE /* Alamofire.framework in Embed Frameworks */,
+				372B80BB24B2F0AA00754CCB /* SwiftyJSON.framework in Embed Frameworks */,
+				372B80B924B2F0AA00754CCB /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,8 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37FEA85724B2CDDE009A95AE /* SwiftyJSON.framework in Frameworks */,
-				37FEA85524B2CDDE009A95AE /* Alamofire.framework in Frameworks */,
+				372B80BA24B2F0AA00754CCB /* SwiftyJSON.framework in Frameworks */,
+				372B80B824B2F0AA00754CCB /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,8 +174,8 @@
 				3792582D24B2C373006AD3C9 /* Sources */,
 				3792582E24B2C373006AD3C9 /* Frameworks */,
 				3792582F24B2C373006AD3C9 /* Resources */,
-				37FEA85924B2CDDE009A95AE /* Embed Frameworks */,
-				37FEA85A24B2CDED009A95AE /* ShellScript */,
+				372B80BC24B2F0AA00754CCB /* Embed Frameworks */,
+				372B80BD24B2F0CD00754CCB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -293,7 +293,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		37FEA85A24B2CDED009A95AE /* ShellScript */ = {
+		372B80BD24B2F0CD00754CCB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
