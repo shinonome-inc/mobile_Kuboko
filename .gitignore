@@ -19,5 +19,7 @@ profile
 *.moved-aside
 
 #CocoaPod
+Pods/
+
 ./**/Pods/
 *.lock
