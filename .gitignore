@@ -20,4 +20,4 @@ profile
 
 #CocoaPod
 Pods/
-*.lock
+#*.lock
