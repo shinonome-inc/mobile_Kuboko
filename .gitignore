@@ -1,6 +1,7 @@
 # Mac
 .DS_Store
 
+
 # Xcode
 build/*
 *.pbxuser
@@ -18,4 +19,4 @@ profile
 *.moved-aside
 
 #CocoaPod
-Pods/*
+Pods/
