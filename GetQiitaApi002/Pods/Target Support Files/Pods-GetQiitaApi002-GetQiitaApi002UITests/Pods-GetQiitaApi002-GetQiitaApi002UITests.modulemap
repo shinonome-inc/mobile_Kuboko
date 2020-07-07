@@ -1,6 +1,0 @@
-framework module Pods_GetQiitaApi002_GetQiitaApi002UITests {
-  umbrella header "Pods-GetQiitaApi002-GetQiitaApi002UITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
