@@ -1,0 +1,6 @@
+framework module Pods_GetQiitaApi002 {
+  umbrella header "Pods-GetQiitaApi002-umbrella.h"
+
+  export *
+  module * { export * }
+}
